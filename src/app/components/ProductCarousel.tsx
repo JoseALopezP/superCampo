@@ -7,30 +7,30 @@ import { Wheat, Leaf, Sun, Trees } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: 'Semillas de Cebolla',
+    name: 'Semillas de Trigo',
     description: 'Variedades de alto rendimiento adaptadas al clima argentino',
-    image: 'https://plus.unsplash.com/premium_photo-1668076517573-fa01307d87ad?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1683248892987-7b6181dfd718?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMHNlZWRzJTIwZ3JhaW58ZW58MXx8fHwxNzc0NDcxMzEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     icon: Wheat,
   },
   {
     id: 2,
-    name: 'Semillas de Cebolla',
+    name: 'Semillas de Maíz',
     description: 'Híbridos certificados con excelente sanidad',
-    image: 'https://images.unsplash.com/photo-1688914433322-1824fc125956?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1635843107983-264f83647ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwc2VlZHMlMjBzb3liZWFufGVufDF8fHx8MTc3NDQ3MTMxM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     icon: Leaf,
   },
   {
     id: 3,
-    name: 'Semillas de Cebolla',
+    name: 'Semillas de Girasol',
     description: 'Alta concentración de aceite y resistencia a enfermedades',
-    image: 'https://images.unsplash.com/photo-1706678201662-ce65d35f3726?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1715865989413-d69314ac1902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5mbG93ZXIlMjBzZWVkcyUyMGFncmljdWx0dXJhbHxlbnwxfHx8fDE3NzQ0NzEzMTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     icon: Sun,
   },
   {
     id: 4,
-    name: 'Semillas de Cebolla',
+    name: 'Semillas de Soja',
     description: 'Genética de última generación para máxima productividad',
-    image: 'https://plus.unsplash.com/premium_photo-1671130295885-19cd68bde34f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1592864554447-5e40d96e2b21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBob2xkaW5nJTIwc2VlZHN8ZW58MXx8fHwxNzc0NDcxMzE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     icon: Trees,
   },
 ];

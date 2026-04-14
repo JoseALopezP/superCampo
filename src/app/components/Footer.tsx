@@ -31,10 +31,10 @@ export function Footer() {
           <div>
             <h4 className="text-lg mb-4 text-white">Productos</h4>
             <ul className="space-y-2 text-amber-100">
-              <li>Semillas de Cebolla 1kg</li>
-              <li>Semillas de Cebolla 5kg</li>
-              <li>Semillas de Cebnolla 10kg</li>
-              <li>Asesoramiento</li>
+              <li>Semillas de Trigo</li>
+              <li>Semillas de Maíz</li>
+              <li>Semillas de Girasol</li>
+              <li>Semillas de Soja</li>
             </ul>
           </div>
 

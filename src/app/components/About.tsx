@@ -10,7 +10,7 @@ export function About() {
             <h2 className="text-5xl mb-6 text-emerald-900 font-serif">Sobre Super Campo</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Desde 1992, <strong>Super Campo</strong> ha sido sinónimo de confianza y calidad en el mercado 
-              de semillas agrícolas argentino. Fundada por Don papa del Chiqui, nuestra empresa familiar 
+              de semillas agrícolas argentino. Fundada por Don Carlos Fernández, nuestra empresa familiar 
               se ha dedicado a proveer a los productores del país con las mejores semillas certificadas.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
