@@ -1,0 +1,72 @@
+"use client";
+import { createContext, useContext, useState } from 'react';
+
+const CartContext = createContext(undefined);
+
+export function CartProvider({ children }) {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product, quantity = 1) => {
+    setCart((prev) => {
+      const existing = prev.find((item) => item.id === product.id);
+      if (existing) {
+        return prev.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: Math.min(item.quantity + quantity, product.stock) }
+            : item
+        );
+      }
+      return [...prev, { ...product, quantity: Math.min(quantity, product.stock) }];
+    });
+  };
+
+  const removeFromCart = (productId) => {
+    setCart((prev) => prev.filter((item) => item.id !== productId));
+  };
+
+  const updateQuantity = (productId, quantity) => {
+    setCart((prev) =>
+      prev.map((item) =>
+        item.id === productId
+          ? { ...item, quantity: Math.max(0, Math.min(quantity, item.stock)) }
+          : item
+      ).filter((item) => item.quantity > 0)
+    );
+  };
+
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  const getTotalItems = () => {
+    return cart.reduce((sum, item) => sum + item.quantity, 0);
+  };
+
+  const getTotalPrice = () => {
+    return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  };
+
+  return (
+    <CartContext.Provider
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        updateQuantity,
+        clearCart,
+        getTotalItems,
+        getTotalPrice,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+}
+
+export function useCart() {
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error('useCart must be used within a CartProvider');
+  }
+  return context;
+}
